@@ -1,0 +1,291 @@
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Las Estaciones del Año</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .estacion {
+      display: none;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .estacion.active {
+      display: block;
+    }
+
+    #inicio.active {
+      display: block;
+    }
+
+    #inicio {
+      display: none;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 40px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Colores personalizados por estación */
+    #primavera {
+      background-color: #e3f9e5;
+      color: #3c763d;
+    }
+
+    #verano {
+      background-color: #fff5cc;
+      color: #cc7a00;
+    }
+
+    #otono {
+      background-color: #fce5cd;
+      color: #a0522d;
+    }
+
+    #invierno {
+      background-color: #e0f7fa;
+      color: #004d66;
+    }
+
+    img {
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    function mostrarEstacion(id) {
+      document.querySelectorAll('.estacion').forEach(function (el) {
+        el.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Las Estaciones del Año</h1>
+    </header>
+
+    <nav>
+      <a href="#" onclick="mostrarEstacion('inicio')">Inicio</a>
+      <a href="#" onclick="mostrarEstacion('primavera')">Primavera</a>
+      <a href="#" onclick="mostrarEstacion('verano')">Verano</a>
+      <a href="#" onclick="mostrarEstacion('otono')">Otoño</a>
+      <a href="#" onclick="mostrarEstacion('invierno')">Invierno</a>
+    </nav>
+
+    <section>
+      <div id="inicio" class="estacion active">
+        <h2>Bienvenidos</h2>
+        <p>Aqui podrás explorar las características únicas de cada una de las cuatro estaciones del año:</p>
+        <p>Primavera, verano, otoño e invierno.</p>
+        <p>Cada temporada tiene sus ventajas y desventajas, y aquí podrás conocerlos de manera detallada y enriquecida.</p>
+        <p>A continuación, encontrarás una descripción completa de cada estación, acompañada de imágenes que te permitirán sumergirte visualmente en la belleza y esencia de cada temporada.</p>
+
+        <img src="https://media.istockphoto.com/id/1130636356/es/foto/puesta-de-sol-sobre-la-monta%C3%B1a-con-cosmos-florece.jpg?s=612x612&w=0&k=20&c=J1Mr6EjRCQEEnPUKSDb8MACqp3Y5FOq15wTwsOdq2gA=" alt="Primavera" width="605">
+        <img src="https://riverofcountry.wordpress.com/wp-content/uploads/2015/06/verano.jpg" alt="Verano" width="640">
+        <img src="https://st2.depositphotos.com/1002200/6221/i/450/depositphotos_62210353-stock-photo-colorful-autumn-landscape.jpg" alt="Otoño" width="655">
+        <img src="https://s1.significados.com/foto/invierno-og.jpg" alt="Invierno" width="605">
+
+        <p><strong>Primavera</strong>: floración y renacimiento de la naturaleza.</p>
+        <p><strong>Verano</strong>: días largos y soleados, ideales para la playa.</p>
+        <p><strong>Otoño</strong>: colores cálidos y hojas caídas.</p>
+        <p><strong>Invierno</strong>: frío, nieve y una atmósfera tranquila.</p>
+      </div>
+
+      <div id="primavera" class="estacion">
+        <h2>Primavera: Pros y Contras</h2>
+<li> Primavera: caracterizada por la floración de las plantas y el renacimiento de la naturaleza. Es un período lleno de vida, color y esperanza, donde los paisajes se transforman con flores y brotes verdes. Las aves regresan de su migración y el clima empieza a suavizarse. </li>       
+ <h3>Pros</h3>
+        <ul>
+
+
+          <li>	Flores en plena floración: La primavera es la época en que las flores comienzan a florecer, creando paisajes hermosos y coloridos. Los tulipanes y cerezos son algunas de las flores más emblemáticas de esta estación, ofreciendo un espectáculo visual inigualable.</li>
+          <li>	Clima templado: La temperatura en la primavera es ideal, con un promedio de 15°C a 25°C, lo que hace que sea una época perfecta para disfrutar del aire fresco y la naturaleza sin el extremo frío ni el calor agobiante.</li>
+          <li>	Días más largos: La primavera trae consigo días más largos, con un aumento de 2-3 horas de luz solar, lo que permite disfrutar de más tiempo al aire libre, aumentando la productividad y el estado de ánimo.</li>
+          <li>	Celebraciones: La primavera es una época de celebraciones, como la Semana Santa y el Día del Trabajo, que ofrecen oportunidades para unirnos con amigos y familiares, celebrar y descansar.</li>
+
+
+        </ul>
+        <h3>Contras</h3>
+        <ul>
+          <li>	Alergias por polen: La primavera es una época en que las alergias por polen se vuelven más frecuentes, afectando a un 20-30% de la población, especialmente a personas con afecciones respiratorias.</li>
+          <li>Lluvias frecuentes: La primavera trae consigo lluvias frecuentes, que pueden ser incómodas y afectar nuestras actividades diarias, como caminatas, excursiones o salidas al parque.</li>
+          <li>	Oscilaciones de temperatura: La temperatura en la primavera puede oscilar hasta 15°C en un solo día, lo que puede ser incómodo y afectar nuestra comodidad, así como la salud, especialmente en niños y adultos mayores.</li>
+
+        </ul>
+        <h3>Ejemplos Destacados de la Primavera:</h3>
+        <ul>
+
+
+<li>
+Tulipanes en Holanda: extensos campos florales que pintan el paisaje de colores vivos.</li>
+<li>Cerezos en Japón: explosión de belleza efímera y tradición cultural.</li>
+<li>Jardines Primaverales: un espectáculo natural que invita a la renovación del espíritu.</li>
+
+        </ul>
+      </div>
+
+      <div id="verano" class="estacion">
+        <h2>Verano: Pros y Contras</h2>
+        
+<li>Verano: conocida por sus días largos y soleados, perfectos para disfrutar del sol y la playa. Es una temporada vibrante y energética, ideal para actividades al aire libre, vacaciones y reuniones familiares o sociales.</li>
+       <h3>Pros</h3>
+        <ul>
+          <li>Vacaciones para familias: El verano es una época perfecta para disfrutar de vacaciones con la familia, con clima soleado y actividades al aire libre que fortalecen los lazos afectivos.</li>
+          <li>	Clima soleado: La temperatura en el verano es ideal para actividades en playas, piscinas o campamentos, con más de 10 horas de sol diario.</li>
+          <li>	Frutas de temporada: El verano es la época de las frutas como melones, cerezas, sandías y duraznos, que son refrescantes, nutritivas y deliciosas.</li>
+        </ul>
+        <h3>Contras</h3>
+        <ul>
+          <li>	Olas de calor: El verano trae consigo olas de calor peligrosas, que pueden afectar nuestra salud y comodidad, especialmente en adultos mayores y niños.</li>
+          <li>	Sequías: La sequía en el verano puede afectar los cultivos y la agricultura, lo que puede tener consecuencias económicas y ambientales serias.</li>
+          <li>	Aumento de mosquitos: El verano es la época en que los mosquitos se vuelven más frecuentes, lo que puede implicar riesgos de salud como el dengue o el zika.</li>
+        </ul>
+
+</ul>
+        <h3>Ejemplos Destacados del Verano:</h3>
+        <ul>
+
+<li>Actividades en la Playa: diversión al aire libre y deportes bajo el sol.</li>
+<li>Frutas de Temporada: refrescantes y nutritivas delicias naturales.</li>
+<li>Festivales de Verano: eventos culturales llenos de energía y alegría.</li>
+
+      </div>
+
+      <div id="otono" class="estacion">
+
+
+        <h2>Otoño: Pros y Contras</h2>
+<li>Otoño: marcada por los colores cambiantes de las hojas y el canto de los pájaros. Las hojas de los árboles adquieren tonos ocres, dorados y rojizos, creando paisajes únicos. Es una estación de transición que invita a la reflexión y la cosecha.</li>    	
+        <ul>
+<h3>Pros</h3>
+          <li>	Paisajes llenos de colores: El otoño es una época en que los paisajes se llenan de colores cálidos y vibrantes, lo que es hermoso y relajante para la vista y el espíritu.</li>
+          <li>	Clima templado: La temperatura en el otoño es ideal, con un promedio de 10°C a 20°C, lo que permite disfrutar de paseos y actividades al aire libre con comodidad.</li>
+          <li>	Cosechas importantes: El otoño es la época de las cosechas importantes, como el maíz y la papa, que son fundamentales para la alimentación y la economía.</li>
+<li>	Reducción de mosquitos: El otoño trae consigo una reducción notable de mosquitos y otros insectos, lo que es beneficioso para nuestra salud y comodidad.</li>
+
+
+        </ul>
+        <h3>Contras</h3>
+        <ul>
+          <li>	Días más cortos: El otoño trae consigo días más cortos, con menos luz solar, lo que puede afectar nuestra energía y bienestar emocional.</li>
+          <li>	Períodos frecuentes de lluvia: El otoño es una época en que las lluvias se vuelven más frecuentes, lo que puede ser incómodo y afectar nuestras actividades diarias.</li>
+          <li>Depresión estacional: El otoño puede traer consigo una depresión estacional, debido a la menor exposición a la luz solar, lo que puede afectar nuestra salud mental y emocional.</li>
+
+        </ul>
+        <h3>Ejemplos Destacados del Otoño:</h3>
+        <ul>
+
+<li>	Vendimia: cosecha de uvas en paisajes dorados.</li>
+<li>	Festivales de la Manzana: celebraciones llenas de tradición y sabores otoñales.</li>
+<li>	Bosques en Otoño: escenarios perfectos para la contemplación y fotografía.</li>
+
+        </ul>
+      </div>
+
+      <div id="invierno" class="estacion">
+        <h2>Invierno: Pros y Contras</h2>
+
+<li>Invierno: caracterizada por la nieve y el frío, pero también por la magia y la paz que trae la temporada. Es tiempo de celebraciones acogedoras, de bebidas calientes y reencuentros. La naturaleza entra en reposo y el paisaje se tiñe de blanco.</li>
+
+
+        <ul>
+<h3>Pros</h3>
+          <li>	Deportes de invierno: El invierno es una época perfecta para disfrutar de deportes como el esquí y el patinaje, que son emocionantes, saludables y desafiantes.</li>
+          <li>	Festividades navideñas: El invierno es la época de las festividades navideñas, que son una oportunidad para unirnos con amigos y familiares, y disfrutar de la magia de la temporada.</li>
+          <li>	Paisajes cubiertos de nieve: El invierno es una época en que los paisajes se cubren de nieve, lo que resulta hermoso, relajante y perfecto para crear recuerdos inolvidables.</li>
+          <li>	Reducción de insectos: El invierno trae consigo una reducción notable de insectos y plagas comunes, lo que es beneficioso para nuestra salud y comodidad.</li>
+        </ul>
+        <h3>Contras</h3>
+        <ul>
+          <li>	Frío intenso: El invierno trae consigo frío intenso y temperaturas bajo cero, lo que puede afectar nuestra salud y comodidad si no se toman precauciones adecuadas.</li>
+          <li>	Tormentas de nieve: El invierno es la época en que las tormentas de nieve se vuelven más frecuentes, lo que puede dificultar el transporte y las actividades diarias.</li>
+          <li>	Días cortos: El invierno trae consigo días cortos, con mínima exposición a la luz solar, lo que puede afectar nuestra energía y bienestar emocional.</li>
+
+        </ul>
+        <h3>Ejemplos Destacados del Otoño:</h3>
+        <ul>
+
+<li>Escenarios Navideños: ambiente cálido y mágico a pesar del frío.</li>
+<li>Deportes de Invierno: actividades para toda la familia y amantes de la nieve.</li>
+<li>Patinaje sobre Hielo: divertidas experiencias en lagos congelados y pistas especiales.</li>
+        </ul>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Te mostraremos lo que puedes encontrar este 2025.</p>
+    <p><a href="#">Conoce lo mejor de estas estaciones</a></p>
+  </footer>
+
+</body>
+</html>
